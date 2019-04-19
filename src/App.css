@@ -1,11 +1,25 @@
-.App {
-  text-align: center;
+#root {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  text-align: center;
 }
 
 .App-header {
@@ -23,11 +37,115 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#main-wrapper {
+  display: inline-block;
+}
+
+#img-wrapper {
+  padding-top: 10%;
+  margin-bottom: 5%;
+}
+
+.modal-header {
+  border: none;
+}
+
+.modal-header .close {
+  margin: 0;
+  padding: 0;
+}
+
+.close {
+  background-color: red !important;
+  border-radius: 50%;
+  -moz-border-radius: 20px;
+  color: white;
+  opacity: 0.9 !important;
+  padding: 0px 4px 4px 4px !important;
+  margin-right: -10px !important;
+  margin-top: -10px !important;
+}
+
+.close:hover {
+  color: white;
+}
+
+.modal-header {
+  padding: 0 !important;
+}
+
+#bill-tab {
+  border: #2a93e1 !important;
+}
+
+.nav-link {
+  padding: 0 !important;
+}
+
+#tab-btn {
+  margin: 1vh 30% 6vh 30%;
+}
+
+input {
+  border: 0 !important;
+  outline: 0 !important;
+  border-bottom: #007bff solid 1px !important;
+  border-radius: 0 !important;
+}
+
+#category {
+  border: 0 !important;
+  outline: 0 !important;
+  border-bottom: #e1e5e9 solid 1px !important;
+  border-radius: 0 !important;
+}
+
+#note {
+  border: 0.5px solid #e1e5e9;
+}
+
+.form-buttons {
+  width: 50%;
+}
+
+.zigzag {
+  background: linear-gradient(
+      -45deg,
+      transparent 33.33%,
+      white 33.33%,
+      white 66.66%,
+      transparent 66.66%
+    ),
+    linear-gradient(
+      45deg,
+      transparent 33.33%,
+      white 33.33%,
+      white 66.66%,
+      transparent 66.66%
+    ) !important;
+  background-size: 20px 50px !important;
+  background-color: #808080 !important;
+}
+
+.modal-content {
+  border: none !important;
+}
+
+.bg-img {
+  width: 50%;
+  height: 30vh;
+  margin-left: 25%;
+}
+
+#file {
+  border: none !important;
+}
+
+@media (max-width: 575px) {
+  #tab-btn {
+    margin: 2vh 23% 6vh 23%;
   }
-  to {
-    transform: rotate(360deg);
+  #img-wrapper {
+    padding-top: 20%;
   }
 }
